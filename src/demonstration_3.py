@@ -17,6 +17,5 @@ Given `[[1, 5, 4], ['a', 3, 5], ['b'], [], ['1', 2, 3]]`, your function should
 return `[[1, 5, 4], ['b']]`.
 """
 def filter_homogenous(arrays):
-    # your code here
     # Your code here
 

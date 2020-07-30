@@ -18,6 +18,5 @@ The assumptions we are making about our input are the following:
 - The specified size is always a positive integer.
 """
 def split_in_parts(s, part_length):
-    # your code here
     # Your code here
 
