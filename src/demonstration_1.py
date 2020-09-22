@@ -20,3 +20,6 @@ The assumptions we are making about our input are the following:
 def split_in_parts(s, part_length):
     # Your code here
 
+
+# Your code here
+
