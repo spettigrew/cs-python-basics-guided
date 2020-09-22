@@ -30,7 +30,6 @@ The letterboxes are
 - 132 = `1`, `3`, `2`
 
 The digit frequencies are 1 x `0`, 9 x `1`, 6 x `2`, etc.
-
 and so the method would return `[1,9,6,3,0,1,1,1,1,1]`
 """
 def paint_letterboxes(start, finish):
