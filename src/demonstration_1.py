@@ -25,13 +25,14 @@ def split_in_parts(s, part_length):
     substring = ""
 
     # for i in range(0, len(s) + 1, 3): # for (int i = 0 ; i < len(s) + 1; i += 3)
+    # print(s[i: (i+ 3)])
 
     for letter in s:
         print(letter)
         # if the length of the substring is less than part_length:
         if len(substring) < part_length:
-        # then we add the letter to it
-        substring = substring + letter # || substring += letter
+            # then we add the letter to it
+            substring = substring + letter # || substring += letter
         # otherwise, we add it the substring to the return list
         else: 
             print("substring: " + substring)
@@ -43,9 +44,10 @@ def split_in_parts(s, part_length):
 
     if len(substring) > 0:
         return_list.append(substring)
+    print(f"Return list: {return_list}")
     
     return_string = " ".join(return_list)
-
+    print(f"Return string: {return_string}")
     return return_string
 
     # for i in range(len(s)):
@@ -53,5 +55,5 @@ def split_in_parts(s, part_length):
     # string_slice = s[start_index:end_index]
 
 # Your code here
-split_in_parts("supercalifragilisticexpialidocious", 3)
+print(split_in_parts("supercalifragilisticexpialidocious", 3))
 
