@@ -15,3 +15,14 @@ number(["a", "b", "c"]) # => ["1: a", "2: b", "3: c"]
 def number(lines):
     # Your code here
 
+def number(lines):
+    if( len( lines ) < 1 ): return[]
+    return_array = []
+    for count, line in enumerate(lines):
+        new_line = "%s: %s"
+
+    new_lines = []
+    index = 1
+    for line in lines:
+        new_lines.append(f"(index")
+
