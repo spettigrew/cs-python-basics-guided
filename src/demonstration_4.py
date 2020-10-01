@@ -34,4 +34,19 @@ and so the method would return `[1,9,6,3,0,1,1,1,1,1]`
 """
 def paint_letterboxes(start, finish):
     # Your code here
-
+    # initialize a list that starts the counts for each digit. This returns a list of length 10, all initialized to 0
+        result = [0] * 10
+        # the main loop that goes from starting number to finish number
+        while start <= finish:
+            current = start
+            # increments the count for each digit in the current number
+            while current != 0:
+                # get the rightmost digit using modulo operator
+                rightmost_digit = current % 10
+                # increment the count for the rightmost digit
+                result[rightmost_digit] += 1
+                # resets current with all the digits except the rightmost digit using integer division
+                current = current // 10
+            # increment outer loop
+            start += 1
+        return result
